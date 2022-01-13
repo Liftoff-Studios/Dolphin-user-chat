@@ -1,0 +1,75 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgb(0, 149, 255);
+}
+
+body:not(#main){
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.form-pane{
+    padding:20px;
+    padding-bottom:90px;
+    text-align:center;
+    box-shadow:1px 1px 7px rgb(138, 137, 137);
+    border-radius:14px;
+    background-color:white;
+}
+
+.form-pane button{
+    padding:3px 50px 3px 50px;
+    color:white;
+    background-color:rgb(0, 149, 255);
+    border:1px rgb(0, 149, 255) solid;
+    cursor:pointer;
+}
+
+
+/*Message Panel*/
+#main{
+    display: flex;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content: center;
+    background-color:white;
+}
+#msg-panel{
+    display:flex;
+    flex-direction: row;
+    padding:10px;    
+}
+
+#chats{
+    border:1px black solid;
+    padding:10px;
+}
+
+/*Stuff*/
+.grp-names{
+    padding:10px 50px 10px 50px;
+    border-bottom:1px black solid;
+    cursor:pointer
+}
+
+#log{
+    border:1px black solid;
+    max-height: 25vh;
+    overflow-y:scroll;
+}
+
+#stuff{
+    border:1px black solid;
+    padding:5px;
+    max-height: 75vh;
+    overflow-y:scroll;
+}
+
+.grp-message{
+    border:1px rgb(0, 149, 255) solid;
+}
+.grp-message small{
+    font-size:9px;
+}

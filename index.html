@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>DolphinChat</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="sign-page">
+        <div id="login-form" class="form-pane">
+            <div><img class="logo-form" src="logo.svg" height="70px" style="vertical-align:sub;position:relative;top:7px;"></div><br>
+            <input placeholder="Enter Username" id="log-user"/><br>
+            <input placeholder="Enter Password" type="password" id="log-pass"/><br><br>
+            <button onclick="log_user()">Sign in</button><br>
+            <small><a href="javascript:show_signup()">Don't Have an account ? Create one</a></small>
+         </div>
+        <div id="sign-up-form" class="form-pane">
+            <div><img class="logo-form" src="logo.svg" height="70px" style="vertical-align:sub;position:relative;top:7px;"></div><br>
+            <input placeholder="Enter Email" id="cr-email"/><br>
+            <input placeholder="Enter Username" id="cr-user"/><br>
+            <input placeholder="Enter Password" type="password" id="cr-pass"/><br>
+            <div id="check-email-div"></div><br><br>
+            <button onclick="create_user()">Sign up</button><br>
+           <small><a href="javascript:show_login()">Already have an account ? Login</a></small>
+        </div>
+    </div>
+
+
+
+    
+    <div id="main">
+
+        <div id="cr-new-button">
+            <button onclick="create_group()">Create a new Group</button>
+        </div>
+        <div id="msg-panel">
+            <div id="chats"></div><br>
+            <div id="stuff">
+                <div id="messages">
+                    Move to a group to see messages
+                </div>
+                <br><br>
+                <input id="new-message-input"><button onclick="send_message()">Send Message</button>
+            </div>
+        </div>
+        <div id="log">
+            <h3>Logs</h3>
+        </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
